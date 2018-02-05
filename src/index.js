@@ -43,7 +43,7 @@ app.post('/', function(req, res) {
 
 app.all('*', function(req, res) {
   return res.status(400)
-      .send({ text: "Error: Please check your Slash Command's Integration URL" });
+      .send({ text: "Error: Please check your Slash Command's Integration URL." });
 });
 
 module.exports = app;
